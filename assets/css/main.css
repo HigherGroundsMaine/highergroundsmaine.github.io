@@ -1,0 +1,406 @@
+:root {
+  --bs-link-color-rgb: 255, 255, 255;
+}
+
+a.text-red {
+  color: #c34444;
+}
+
+a {
+  color: #cf9a50;
+}
+
+.color-accent-1 {
+  color: #8BE5D0;
+}
+
+.color-accent-2 {
+  color: #E9AF5D;
+}
+
+.text-green-light {
+  color: #5A8075;
+}
+
+.text-red {
+  color: #c34444;
+}
+
+.btn-warning {
+  background-color: #E9AF5D;
+  border-color: #FFE500;
+  border-width: 3px;
+  font-family: Hind;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.btn-green {
+  background-color: #2a5146;
+  border-color: #E9AF5D;
+  color: white;
+  border-width: 3px;
+  font-family: Hind;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.btn-green:hover {
+  background-color: #E9AF5D;
+  color: #2a5146;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  font-family: "Hind";
+}
+
+@media (max-width: 768px) {
+  .masthead-wrapper h1 {
+    font-size: 4.5rem;
+    line-height: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .masthead-wrapper h2 {
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+}
+
+h1 {
+  font-family: "Hind";
+  font-size: 7.993rem;
+  line-height: 7rem;
+}
+
+h2 {
+  font-family: "Hind";
+  font-size: 5rem;
+  line-height: 4rem;
+}
+
+h3 {
+  font-family: "Hind";
+  font-size: 3.998rem;
+}
+
+h4 {
+  font-family: "Hind";
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+  letter-spacing: 0.03rem;
+  font-family: "Hind";
+  font-weight: 600;
+}
+
+h6 {
+  font-family: "Hind";
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.4rem;
+  letter-spacing: 0.02rem;
+}
+
+section#footer p {
+  font-size: 1.2rem;
+}
+
+section#footer h6 {
+  font-size: 1.6rem;
+}
+
+#sub-footer a {
+  color: #c34444;
+}
+
+#sub-footer {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+#sub-footer::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 40px 40px 40px;
+  border-color: transparent transparent #2a5146 transparent;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  color: #E9AF5D !important;
+  width: 4rem;
+  height: 4rem;
+}
+
+.navbar {
+  background: #2a5146;
+  font-family: "Hind";
+  text-transform: uppercase;
+  background-image: url("/assets/img/botanicals.png");
+  background-repeat: no-repeat;
+  background-blend-mode: difference;
+  background-position-x: left;
+  background-origin: content-box;
+  z-index: 100;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar h6 {
+  letter-spacing: 0.1em;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.navbar h6 a {
+  color: white;
+}
+
+.navbar h6 a.active, .navbar h6 a:hover, section#footer a.active, section#footer a:hover {
+  color: #e0b269;
+}
+
+.navbar-toggler-icon {
+  color: rgb(255, 255, 255);
+}
+
+body {
+  background: #fefff7;
+  color: #43695e;
+  font-family: "Aleo";
+}
+
+.btn-nav {
+  font-family: "Hind";
+  font-size: 1.35rem;
+  font-weight: 600;
+  background-color: #e0b269;
+  border-color: rgba(255, 255, 255, 0.6);
+  border-width: 3px;
+  color: #1f3f36;
+}
+
+svg#logo {
+  width: 125px;
+}
+
+@media (max-width: 768px) {
+  svg#logo-text {
+    width: 200px;
+  }
+}
+@media (min-width: 769px) {
+  svg#logo-text {
+    width: 350px;
+  }
+}
+
+section#jumbo {
+  min-height: 700px;
+  background-image: url("/assets/img/jumbo-mural.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: pulse 35s infinite;
+  overflow-y: hidden;
+  z-index: -1;
+}
+
+#offcanvasTop {
+  min-height: 700px;
+  background-image: url("/assets/img/maine-forest.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#offcanvasTop a {
+  color: white;
+  font-family: "Hind";
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2.4rem;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.bg-paper {
+  background-image: url("/assets/img/texture-nouveau.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+.hours {
+  width: 400px;
+}
+
+.masthead {
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  color: white;
+}
+
+.masthead h5 {
+  color: #f5f6f1;
+  font-weight: 700;
+  padding: 2rem;
+  line-height: 2.3rem;
+  display: inline-block;
+  background-color: rgb(21, 17, 20);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  margin: auto;
+}
+
+.masthead-wrapper {
+  padding: 120px 50px 50px 50px;
+  width: 500px;
+  margin: 20px auto;
+}
+
+.masthead .slug {
+  margin-top: 3rem;
+  letter-spacing: 0.1em;
+  text-shadow: 0px 3px 0px rgb(0, 0, 0);
+}
+
+img.hr {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+section.welcome {
+  padding-bottom: 4rem;
+}
+
+.cannabis-coffee-image {
+  background-image: url("/assets/img/photos/coffee/coffee-cannabis-cup-lg.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: difference;
+  background-position-x: right;
+  background-origin: content-box;
+  height: 900px;
+  background-color: rgb(33, 21, 29);
+}
+@media (min-width: 769px) {
+  .cannabis-coffee-image {
+    max-width: 50vw;
+    margin-top: -2rem;
+  }
+}
+
+.cannabis-coffee-text {
+  background-color: rgb(21, 17, 20);
+}
+@media (min-width: 769px) {
+  .cannabis-coffee-text {
+    max-width: 50vw;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.bg-dark {
+  background-color: rgb(21, 17, 20);
+}
+
+.bg-nav {
+  background-color: #2a5146;
+}
+
+.text-nav {
+  background-color: #2a5146;
+}
+
+section#testimonials p {
+  font-weight: 600;
+}
+
+section#footer {
+  background-color: #2a5146;
+  min-height: 10rem;
+  background-image: url("/assets/img/botanicals.png");
+  background-repeat: no-repeat;
+  background-blend-mode: difference;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-origin: content-box;
+  font-family: "Hind";
+}
+
+.btn-dark {
+  font-family: "Hind";
+}
+
+section#footer a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0em;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.social-icon {
+  max-width: 40px;
+  fill: #e0b269;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-zoom {
+    max-height: 70vh;
+    margin: 0 auto;
+    display: block;
+    opacity: 0;
+    scale: 0.9;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 100px 36%;
+  }
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  .scrolling {
+    animation: fadeIn 3s ease-in-out;
+    animation-range: entry;
+    animation-timeline: view(); /* Applies the animation based on scroll position */
+  }
+}
+.hours-cell {
+  width: 100px;
+}
+
+/*# sourceMappingURL=main.css.map */

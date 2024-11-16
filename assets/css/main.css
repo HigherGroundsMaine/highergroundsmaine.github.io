@@ -51,7 +51,7 @@ a {
 }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 h1, h2 {
@@ -164,10 +164,10 @@ section#footer h6 {
   text-decoration: none;
 }
 
-.navbar h6 {
-  letter-spacing: 0.1em;
-  font-size: 1.6rem;
+.navbar h6, h6.nav {
+  letter-spacing: 0.05em;
   font-weight: 500;
+  font-size: 1.45rem;
 }
 
 .navbar h6 a {
@@ -178,8 +178,8 @@ section#footer h6 {
   color: #e0b269;
 }
 
-.navbar-toggler-icon {
-  color: rgb(255, 255, 255);
+.navbar-toggler {
+  background-color: rgb(255, 255, 255);
 }
 
 body {
@@ -204,12 +204,12 @@ svg#logo {
 
 @media (max-width: 768px) {
   svg#logo-text {
-    width: 200px;
+    width: 250px;
   }
 }
 @media (min-width: 769px) {
   svg#logo-text {
-    width: 350px;
+    width: 325px;
   }
 }
 
@@ -237,7 +237,6 @@ section#jumbo {
   font-family: "Hind";
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 2.4rem;
 }
 
 @keyframes pulse {

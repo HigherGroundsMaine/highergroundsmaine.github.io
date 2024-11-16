@@ -156,6 +156,7 @@ section#footer h6 {
   background-repeat: no-repeat;
   background-blend-mode: difference;
   background-position-x: left;
+  background-position-y: bottom;
   background-origin: content-box;
   z-index: 100;
 }
@@ -167,7 +168,7 @@ section#footer h6 {
 .navbar h6, h6.nav {
   letter-spacing: 0.05em;
   font-weight: 500;
-  font-size: 1.45rem;
+  font-size: 1.3rem;
 }
 
 .navbar h6 a {
@@ -176,6 +177,10 @@ section#footer h6 {
 
 .navbar h6 a.active, .navbar h6 a:hover, section#footer a.active, section#footer a:hover {
   color: #e0b269;
+}
+
+.bg-cta-nav {
+  background-color: #e0b269;
 }
 
 .navbar-toggler {
@@ -198,19 +203,30 @@ body {
   color: #1f3f36;
 }
 
-svg#logo {
-  width: 125px;
+@media (max-width: 768px) {
+  svg#logo {
+    width: 125px;
+  }
+}
+@media (min-width: 769px) {
+  svg#logo {
+    width: 30%;
+  }
 }
 
 @media (max-width: 768px) {
   svg#logo-text {
-    width: 100px;
+    width: 250px;
   }
 }
 @media (min-width: 769px) {
   svg#logo-text {
-    width: 325px;
+    width: 300px;
   }
+}
+
+#footer svg.logo {
+  width: 125px;
 }
 
 section#jumbo {
@@ -220,7 +236,7 @@ section#jumbo {
   background-size: cover;
   background-repeat: no-repeat;
   animation: pulse 35s infinite;
-  overflow-y: hidden;
+  overflow: hidden;
   z-index: -1;
 }
 

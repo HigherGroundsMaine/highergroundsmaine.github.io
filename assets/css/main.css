@@ -50,7 +50,7 @@ a {
   color: #2a5146;
 }
 
-body {
+html, body {
   overflow-x: hidden;
 }
 

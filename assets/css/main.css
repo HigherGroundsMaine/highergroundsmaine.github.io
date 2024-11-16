@@ -42,12 +42,12 @@ a {
   border-width: 3px;
   font-family: Hind;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .btn-green:hover {
   background-color: #E9AF5D;
-  color: #2a5146;
+  color: #2a5146 !important;
 }
 
 html, body {
@@ -411,11 +411,17 @@ section#footer a {
   .scrolling {
     animation: fadeIn 3s ease-in-out;
     animation-range: entry-crossing;
-    animation-timeline: view(); /* Applies the animation based on scroll position */
+    animation-timeline: view();
   }
 }
 .hours-cell {
   width: 100px;
+}
+
+.scrolling-slide {
+  animation: slideInUp 3s ease-in-out;
+  animation-range: entry-crossing;
+  animation-timeline: view();
 }
 
 /*# sourceMappingURL=main.css.map */

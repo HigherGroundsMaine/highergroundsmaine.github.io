@@ -156,9 +156,9 @@ section#footer h6 {
   background-repeat: no-repeat;
   background-blend-mode: difference;
   background-position-x: left;
-  background-position-y: bottom;
   background-origin: content-box;
   z-index: 100;
+  border-bottom: 4px solid #003224;
 }
 
 .navbar a {
@@ -210,7 +210,7 @@ body {
 }
 @media (min-width: 769px) {
   svg#logo {
-    width: 30%;
+    width: 125px;
   }
 }
 
@@ -221,7 +221,7 @@ body {
 }
 @media (min-width: 769px) {
   svg#logo-text {
-    width: 300px;
+    width: 325px;
   }
 }
 

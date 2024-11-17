@@ -347,17 +347,22 @@ section.welcome {
 }
 
 .cannabis-coffee-text {
+  background-image: url("/assets/img/leaves.png");
+  background-repeat: no-repeat;
+  background-blend-mode: difference;
+  background-position-x: right;
+  background-position-y: top;
+  background-origin: content-box;
   background-color: rgb(21, 17, 20);
 }
 @media (min-width: 769px) {
   .cannabis-coffee-text {
     max-width: 50vw;
-    padding-top: 2rem;
     margin-bottom: 2rem;
   }
 }
 
-.bg-dark {
+.bg-offblack {
   background-color: rgb(21, 17, 20);
 }
 

@@ -359,6 +359,9 @@ section.welcome {
 
 .bg-dark {
   background-color: rgb(21, 17, 20);
+}
+
+.leaves {
   background-image: url("/assets/img/leaves.png");
   background-repeat: no-repeat;
   background-blend-mode: difference;

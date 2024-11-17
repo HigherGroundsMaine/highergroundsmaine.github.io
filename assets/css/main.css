@@ -359,6 +359,12 @@ section.welcome {
 
 .bg-dark {
   background-color: rgb(21, 17, 20);
+  background-image: url("/assets/img/leaves.png");
+  background-repeat: no-repeat;
+  background-blend-mode: difference;
+  background-position-x: right;
+  background-position-y: top;
+  background-origin: content-box;
 }
 
 .bg-nav {

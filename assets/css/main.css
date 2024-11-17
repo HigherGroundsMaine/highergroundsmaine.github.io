@@ -353,7 +353,7 @@ section.welcome {
   background-position-x: right;
   background-position-y: top;
   background-origin: content-box;
-  background-color: rgb(21, 17, 20);
+  background-color: rgb(27, 22, 25);
 }
 @media (min-width: 769px) {
   .cannabis-coffee-text {
@@ -363,7 +363,7 @@ section.welcome {
 }
 
 .bg-offblack {
-  background-color: rgb(21, 17, 20);
+  background-color: rgb(27, 22, 25);
 }
 
 .leaves {

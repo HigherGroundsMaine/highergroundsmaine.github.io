@@ -3,7 +3,7 @@
 }
 
 a.text-red {
-  color: #c34444;
+  color: #925015;
 }
 
 a {
@@ -22,8 +22,12 @@ a {
   color: #5A8075;
 }
 
+.text-green a {
+  color: #43695e;
+}
+
 .text-red {
-  color: #c34444;
+  color: #925015;
 }
 
 .btn-warning {
@@ -107,9 +111,14 @@ h6 {
   font-weight: 700;
 }
 
-p {
+p, li {
   font-size: 1.4rem;
   letter-spacing: 0.02rem;
+}
+
+li {
+  list-style-type: circle;
+  margin-bottom: 0.8rem;
 }
 
 section#footer p {
@@ -121,7 +130,7 @@ section#footer h6 {
 }
 
 #sub-footer a {
-  color: #c34444;
+  color: #925015;
 }
 
 #sub-footer {
@@ -183,6 +192,11 @@ section#footer h6 {
 
 .bg-cta-nav {
   background-color: #e0b269;
+}
+
+.bg-gold {
+  background-color: #E9AF5D;
+  color: rgb(21, 17, 20);
 }
 
 .navbar-toggler {

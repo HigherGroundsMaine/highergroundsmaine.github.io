@@ -187,7 +187,7 @@ section#footer h6 {
 .navbar i.fa-solid {
   min-width: 29px;
   display: inline-block;
-  animation: bounceInDown 0.5s 1 linear;
+  animation: fadeInDown 0.8s 1 linear;
   transition-timing-function: ease-out;
   transition: 0.1s;
 }
@@ -256,6 +256,18 @@ body {
   svg#logo-text {
     width: 325px;
   }
+}
+
+.modal.age-verification {
+  background-color: #081633;
+}
+
+.age-verification .modal-body {
+  background-image: url("/assets/img/maine-forest.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 75vh;
 }
 
 #footer svg.logo {
@@ -421,7 +433,7 @@ section#footer {
   font-family: "Hind";
 }
 
-.btn-dark {
+.btn-dark, .btn-light {
   font-family: "Hind";
 }
 

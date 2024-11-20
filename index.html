@@ -37,6 +37,28 @@
 <!-- End Jekyll SEO tag -->
 
   </head>
+  <script type="text/javascript">
+    addEventListener('DOMContentLoaded', () => {
+    const modal = new bootstrap.Modal('#ageVerification');
+
+    if (
+        !document.cookie
+        .split('; ')
+        .find((cookie) => cookie.startsWith('age_verified='))
+    ) {
+        modal.show();
+    }
+
+    const el = document.getElementById('age-verification-button');
+    if (el) {
+        el.addEventListener('click', () => {
+        document.cookie =
+            'age_verified=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; secure';
+        modal.hide();
+        });
+    }
+    });
+</script>
   <body>
     
     <nav class="navbar navbar-expand-xl">
@@ -120,33 +142,6 @@
           <div class="col-lg-6">
             <div class="d-flex flex-column justify-content-center align-items-center align-content-around">
     <div>
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ageVerification">
-  Launch static backdrop modal
-</button>
-
-<!-- Modal -->
-<div class="modal age-verification fade" id="ageVerification" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ageVerficationLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content align-content-center align-items-center">
-      <div class="modal-body text-white p-5">
-        <div class="d-flex flex-column justify-content-center align-content-center align-items-center">
-                <img src="/assets/img/branding/highergrounds-logo-botanical-white.png" alt="Higher Grounds of Maine" class="img-fluid" />
-                <p class="px-5 py-2 text-center">Individual state laws within the United States vary in regards to selling CBD products to minors therefore we need to verify your age.</p>
-                <h4 class="fw-semibold text-uppercase text-center">Are you 21 years of age or older?</h4>
-                <div class="d-flex py-4">
-                    <div class="me-5">
-                    <button type="button" class="btn btn-light text-uppercase fs-4 fw-semibold px-4 pb-1" id="age-verification-button">I am 21+</button>
-                    </div>
-                    <div>
-                    <a href="/age-verification/" class="btn btn-light text-uppercase fs-4 fw-semibold px-4 pb-1" role="button">NO</a>
-                    </div>
-                </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
         <h4 class="text-center p-lg-4 mx-lg-5 fw-bold text-green-light">Welcome to our cozy cannabis and coffee shop located in the heart of Portland, Maine!</h4>
         <h4 class="text-center p-lg-4 mx-lg-5 fw-bold"><a href="https://www.google.com/maps/dir//43.6557579,-70.2544554/@43.655758,-70.254455,16z?hl=en-US&amp;entry=ttu&amp;g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D" class="text-red text-decoration-none fw-normal"><span class="fw-semibold"><i class="fa-solid fa-route"></i> Get Directions</span></a></h4>
     </div>

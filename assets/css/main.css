@@ -200,6 +200,10 @@ section#footer h6 {
   background-color: #e0b269;
 }
 
+a.btn.bg-cta-nav:hover {
+  background-color: white;
+}
+
 .bg-gold {
   background-color: #e0b269;
   color: #2a5146;

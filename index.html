@@ -17,28 +17,30 @@
     <script src="https://kit.fontawesome.com/90da15346b.js" crossorigin="anonymous"></script>
     <link rel="preload" href="/assets/img/jumbo-mural.jpg" as="image" type="image/jpg">
     <link rel="preload" href="/assets/img/botanicals.png" as="image" type="image/png">
-    <script type="text/javascript">
-      addEventListener('DOMContentLoaded', () => {
-      const modal = new bootstrap.Modal('#ageVerification', {});
-  
-      if (
-          !document.cookie
-          .split('; ')
-          .find((cookie) => cookie.startsWith('age_verified='))
-      ) {
-          modal.show();
-      }
-  
-      const el = document.getElementById('age-verification-button');
-      if (el) {
-          el.addEventListener('click', () => {
-          document.cookie =
-              'age_verified=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; secure';
-          modal.hide();
-          });
-      }
-      });
-    </script>
+    
+      <script type="text/javascript">
+        addEventListener('DOMContentLoaded', () => {
+        const modal = new bootstrap.Modal('#ageVerification', {});
+    
+        if (
+            !document.cookie
+            .split('; ')
+            .find((cookie) => cookie.startsWith('age_verified='))
+        ) {
+            modal.show();
+        }
+    
+        const el = document.getElementById('age-verification-button');
+        if (el) {
+            el.addEventListener('click', () => {
+            document.cookie =
+                'age_verified=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; secure';
+            modal.hide();
+            });
+        }
+        });
+      </script>
+    
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Higher Grounds Cannabis &amp; Coffee | Higher Grounds offers Maine&#39;s finest CBD paired with artisanal coffee in the Greater Portland region.</title>
 <meta name="generator" content="Jekyll v4.3.4" />
@@ -58,7 +60,7 @@
 {"@context":"https://schema.org","@type":"WebSite","description":"Welcome to our cozy cannabis and coffee shop located in the heart of Portland, Maine! We’re proud to bring you Maine’s locally-grown cannabis products, paired with a top-shelf specialty coffee menu. We also offer organically-grown hemp CBD products.","headline":"Higher Grounds Cannabis &amp; Coffee","image":"https://www.highergrounds.me/assets/img/og_image.jpg","name":"Higher Grounds Cannabis &amp; Coffee","url":"https://www.highergrounds.me/"}</script>
 <!-- End Jekyll SEO tag -->
 
-  </head>
+</head>
   <body>
     
     <nav class="navbar navbar-expand-xl">

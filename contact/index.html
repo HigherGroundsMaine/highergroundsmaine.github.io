@@ -17,6 +17,28 @@
     <script src="https://kit.fontawesome.com/90da15346b.js" crossorigin="anonymous"></script>
     <link rel="preload" href="/assets/img/jumbo-mural.jpg" as="image" type="image/jpg">
     <link rel="preload" href="/assets/img/botanicals.png" as="image" type="image/png">
+    <script type="text/javascript">
+      addEventListener('DOMContentLoaded', () => {
+      const modal = new bootstrap.Modal('#ageVerification', {});
+  
+      if (
+          !document.cookie
+          .split('; ')
+          .find((cookie) => cookie.startsWith('age_verified='))
+      ) {
+          modal.show();
+      }
+  
+      const el = document.getElementById('age-verification-button');
+      if (el) {
+          el.addEventListener('click', () => {
+          document.cookie =
+              'age_verified=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; secure';
+          modal.hide();
+          });
+      }
+      });
+    </script>
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Contact Us | Higher Grounds Cannabis &amp; Coffee</title>
 <meta name="generator" content="Jekyll v4.3.4" />
@@ -35,28 +57,6 @@
 <!-- End Jekyll SEO tag -->
 
   </head>
-  <script type="text/javascript">
-    addEventListener('DOMContentLoaded', () => {
-    const modal = new bootstrap.Modal('#ageVerification', {});
-
-    if (
-        !document.cookie
-        .split('; ')
-        .find((cookie) => cookie.startsWith('age_verified='))
-    ) {
-        modal.show();
-    }
-
-    const el = document.getElementById('age-verification-button');
-    if (el) {
-        el.addEventListener('click', () => {
-        document.cookie =
-            'age_verified=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; secure';
-        modal.hide();
-        });
-    }
-    });
-</script>
   <body>
     
     <nav class="navbar navbar-expand-xl">
@@ -124,6 +124,30 @@
         </div>
     </div>
 </div>
+    <!-- Modal -->
+    <div class="modal age-verification fade" id="ageVerification" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ageVerficationLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content align-content-center align-items-center">
+          <div class="modal-body text-white p-5">
+              <div class="d-flex flex-column justify-content-center align-content-center align-items-center">
+                <img src="/assets/img/branding/highergrounds-logo-botanical-white.png" alt="Higher Grounds of Maine" class="img-fluid">
+                <p class="px-5 py-2 text-center">Individual state laws within the United States vary in regards to selling CBD products to minors therefore we need to verify your age.</p>
+                <h4 class="fw-semibold text-uppercase text-center">Are you 21 years of age or older?</h4>
+                <div class="d-flex py-4">
+                    <div class="me-5">
+                    <button type="button" class="btn btn-light text-uppercase fs-4 fw-semibold px-4 pb-1" id="age-verification-button">I am 21+</button>
+                    </div>
+                    <div>
+                    <a href="/age-verification/" class="btn btn-light text-uppercase fs-4 fw-semibold px-4 pb-1" role="button">NO</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <div class="container-fluid g-0 mb-5">
           <div class="container-fluid bg-offblack leaves pt-md-0 py-sm-0 g-0">
     <div class="row g-0 text-white pb-5">

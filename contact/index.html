@@ -163,37 +163,37 @@
         </div>
         <div class="col-md-12 col-lg-6 animate__animated animate__fadeIn pt-4 px-5">
             <h3 class="text-uppercase text-center fw-bold mt-4 mb-4">Contact <span class="fw-light">Us</span></h3>
-            <div class="text-center">
-            <form>
-                <div class="mb-4 text-start">
-                     <label for="exampleInputName" class="form-label"><h5 class="fw-semibold text-uppercase color-accent-2"> Name</h5></label>
-                    <input type="name" class="form-control w-50 border border-warning border-3" id="exampleInputName" aria-describedby="NamelHelp" />
+            <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/mzzbvoww" method="post">
+            <div class="d-flex flex-column">
+                <fieldset id="fs-frm-inputs">  
+                    <div>
+                        <div class="d-flex align-items-baseline">
+                            <div class="w-100">
+                                <label for="name"><h5 class="text-uppercase fw-light color-accent-2"><i class="fa-solid fa-address-card"></i> Name</h5></label>
+                                <input type="text" name="name" id="name" class="w-100 p-2 mb-4 form-input rounded-3" required="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email-address"><h5 class="text-uppercase fw-light color-accent-2"><i class="fa-solid fa-envelope"></i> Email</h5></label>
+                        <input type="email" name="_replyto" id="email-address" class="w-100 p-2 mb-4 form-input rounded-3" required="" />
+                    </div>
+                    <div>
+                        <label for="phone"><h5 class="text-uppercase fw-light color-accent-2"><i class="fa-solid fa-envelope"></i> Phone Number <span class="opacity-50">(Optional)</span></h5></label>
+                        <input type="telephone" name="phone" id="phone" class="w-100 p-2 mb-4 form-input rounded-3" placeholder="(555) 555-1212" />
+                    </div>
+                    <div>
+                        <label for="message"><h5 class="text-uppercase fw-light color-accent-2"><i class="fa-solid fa-message"></i> Message</h5></label>
+                        <textarea rows="4" name="message" id="complaint" class="w-100 rounded-3 fc-1 p-2 form-textarea" required=""></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
+                </fieldset>
                 </div>
-                <div class="mb-4 text-start">
-                    <label for="exampleInputEmail1" class="form-label"><h5 class="fw-semibold text-uppercase color-accent-2">Email Address</h5></label>
-                    <input type="email" class="form-control w-50 border border-warning border-3" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                </div>
-                <div class="mb-4 text-start">
-                    <label for="exampleInputPhone" class="form-label"><h5 class="fw-semibold text-uppercase color-accent-2">Phone Number</h5></label>
-                    <input type="phone" class="form-control w-50 border border-warning border-3" id="exampleInputPhone" aria-describedby="phoneHelp" />
-                </div>
-                <div class="mb-4 text-start">
-                    <label for="contactMethod" class="form-label"><h5 class="fw-semibold text-uppercase color-accent-2">Preferred Method</h5></label>
-                    <select class="form-select border border-warning border-3 w-50" aria-label="Preferred Method of Contact" id="contactMethod">
-                        <option selected="">Choose</option>
-                        <option value="email">Email</option>
-                        <option value="Phone">Phone</option>
-                    </select>
-                </div>
-                <div class="mb-4 text-start">
-                    <label for="exampleFormControlTextarea1" class="form-label"><h5 class="fw-semibold text-uppercase color-accent-2">Message</h5></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-warning pt-2 px-4 rounded rounded-3 fw-semibold fs-5 text-uppercase">SEND</button>
-                </form>
+                <input type="text" name="_gotcha" class="d-none" />
+                <button type="submit" value="Send" class="btn bg-light text-white border-2 rounded-3 px-4 pt-3 mt-4 w-50"><h6 class="text-black text-uppercase"><i class="fa-solid fa-paper-plane pe-1"></i> Send</h6></button>
+            </form>
         </div>
     </div>
-</div>
 </div>
 
     </div>

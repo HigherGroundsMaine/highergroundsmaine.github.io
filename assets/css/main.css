@@ -274,6 +274,33 @@ body {
   min-height: 75vh;
 }
 
+.form-input {
+  font-family: Hind;
+  letter-spacing: 0.02rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: black;
+  border-color: rgb(224, 178, 105);
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 0px;
+  box-shadow: rgba(10, 10, 10, 0.05) 0 1px 4px 0 inset;
+}
+
+.form-textarea {
+  font-family: Hind;
+  color: black;
+  font-size: 1.4rem;
+  letter-spacing: 0.02rem;
+  display: block;
+  min-height: px;
+  border-color: rgb(224, 178, 105);
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 0px;
+  box-shadow: rgba(10, 10, 10, 0.05) 0 1px 4px 0 inset;
+}
+
 #footer svg.logo {
   width: 125px;
 }

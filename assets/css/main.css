@@ -464,6 +464,20 @@ section#footer {
   font-family: "Hind";
 }
 
+div.announcement h6, section#footer h6 {
+  font-size: 1rem;
+  font-family: Hind;
+  font-weight: 500;
+}
+
+.bg-offblack {
+  background-color: rgb(27, 22, 25);
+}
+
+.bg-gold {
+  background-color: #e0b269;
+}
+
 .btn-dark, .btn-light {
   font-family: "Hind";
 }

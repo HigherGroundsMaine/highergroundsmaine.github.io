@@ -40,15 +40,14 @@
       <script type="text/javascript">
         addEventListener('DOMContentLoaded', () => {
         const modal = new bootstrap.Modal('#ageVerification', {});
-    
         if (
-            !document.cookie
-            .split('; ')
-            .find((cookie) => cookie.startsWith('age_verified='))
+          !new URL(document.location.href).searchParams.has('hide_verification') &&
+          !document.cookie
+          .split('; ')
+          .find((cookie) => cookie.startsWith('age_verified='))
         ) {
-            modal.show();
+        modal.show();
         }
-    
         const el = document.getElementById('age-verification-button');
         if (el) {
             el.addEventListener('click', () => {
@@ -78,6 +77,13 @@
 <!-- End Jekyll SEO tag -->
 
 </head>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-185957487-1');
+  </script>
   <body>
     <div class="announcement container-fluid bg-announcement text-black text-center pb-2 pt-3 text-uppercase show-on-monday">
     <h6 class="animate__animated animate__flipInX"><span class="fw-normal">Monday Special:</span> <span class="fw-semibold">10% off all concentrates & vape cartridges</span></h6>

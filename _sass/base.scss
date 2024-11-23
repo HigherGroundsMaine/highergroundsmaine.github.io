@@ -1,9 +1,25 @@
-:root {
-  --bs-link-color-rgb: 255, 255, 255;
+$backgroundColor: #fefff7;
+$bodyColor: #43695e;
+$bodyFont: "Aleo";
+$headerFont: "Hind";
+
+$color-green-dark: #43695e;
+$color-green-nav: #2a5146;
+$color-green-burn: #003224;
+$color-offblack: rgb(27, 22, 25);
+$color-green-light: #8BE5D0;
+$color-gold:  #E9AF5D;
+$color-gold-nav: #e0b269;
+$color-gold-light: #FFE500;
+$color-red: #923f15;
+$color-link-light: "255, 255, 255";
+
+:root { 
+  --bs-link-color-rgb: #{$color-link-light};
 }
 
 a.text-red {
-  color: #923f15;
+  color: $color-red;
 }
 
 a {
@@ -11,11 +27,11 @@ a {
 }
 
 .color-accent-1 {
-  color: #8BE5D0;
+  color: $color-green-light;
 }
 
 .color-accent-2 {
-  color: #E9AF5D;
+  color: $color-gold;
 }
 
 .text-green-light {
@@ -23,16 +39,16 @@ a {
 }
 
 .text-green a {
-  color: #43695e;
+  color: $bodyColor;
 }
 
 .text-red {
-  color: #923f15;
+  color: $color-red;
 }
 
 .btn-warning {
-  background-color: #E9AF5D;
-  border-color: #FFE500;
+  background-color: $color-gold;
+  border-color: $color-gold-light;
   border-width: 3px;
   font-family: Hind;
   font-weight: 600;
@@ -40,8 +56,8 @@ a {
 }
 
 .btn-green {
-  background-color: #2a5146;
-  border-color: #E9AF5D;
+  background-color: $color-green-nav;
+  border-color: $color-gold;
   color: white;
   border-width: 3px;
   font-family: Hind;
@@ -50,7 +66,7 @@ a {
 }
 
 .btn-green:hover {
-  background-color: #E9AF5D;
+  background-color: $color-gold;
   color: #2a5146 !important;
 }
 
@@ -58,19 +74,19 @@ html, body {
   overflow-x: clip;
 }
 
-h1, h2 {
-  font-family: "Hind";
+h1,h2 {
+  font-family: $headerFont;
 }
 
-@media (max-width: 768px) {
-  .masthead-wrapper h1 {
+.masthead-wrapper h1 {
+  @media (max-width: 768px){
     font-size: 4.5rem;
     line-height: 4rem;
   }
 }
 
-@media (max-width: 768px) {
-  .masthead-wrapper h2 {
+.masthead-wrapper h2 {
+  @media (max-width: 768px){
     font-size: 2.5rem;
     line-height: 2rem;
   }
@@ -117,7 +133,7 @@ p, li {
 }
 
 li {
-  list-style-type: circle;
+  list-style-type:circle;
   margin-bottom: 0.8rem;
 }
 
@@ -130,7 +146,7 @@ section#footer h6 {
 }
 
 #sub-footer a {
-  color: #923f15;
+  color: $color-red;
 }
 
 #sub-footer {
@@ -139,27 +155,27 @@ section#footer h6 {
 }
 
 #sub-footer::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0 40px 40px 40px;
-  border-color: transparent transparent rgb(27, 22, 25) transparent;
+  border-color: transparent transparent $color-offblack transparent;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
-  color: #E9AF5D !important;
+  color: $color-gold !important;
   width: 4rem;
   height: 4rem;
 }
 
 .navbar {
-  background: rgb(27, 22, 25);
-  font-family: "Hind";
+  background: $color-offblack;
+  font-family: $headerFont;
   text-transform: uppercase;
   background-image: url("/assets/img/botanicals.png");
   background-repeat: no-repeat;
@@ -168,7 +184,6 @@ section#footer h6 {
   background-origin: content-box;
   z-index: 100;
 }
-
 .navbar a {
   text-decoration: none;
 }
@@ -191,13 +206,12 @@ section#footer h6 {
   transition-timing-function: ease-out;
   transition: 0.1s;
 }
-
 .navbar h6 a.active, .navbar h6 a:hover, section#footer a.active, section#footer a:hover {
   color: #e0b269;
 }
 
 .bg-cta-nav {
-  background-color: #e0b269;
+  background-color: $color-gold-nav;
 }
 
 a.btn.bg-cta-nav:hover {
@@ -205,25 +219,23 @@ a.btn.bg-cta-nav:hover {
 }
 
 .bg-gold {
-  background-color: #e0b269;
-  color: #2a5146;
+  background-color: $color-gold-nav;
+  color: $color-green-nav;
 }
 
 .navbar-toggler {
   background-color: rgb(255, 255, 255);
 }
-
 body {
-  background: #fefff7;
-  color: #43695e;
-  font-family: "Aleo";
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
 }
-
 .btn-nav {
-  font-family: "Hind";
+  font-family: $headerFont;
   font-size: 1.35rem;
   font-weight: 600;
-  background-color: #e0b269;
+  background-color: $color-gold-nav;
   border-left-color: rgba(255, 255, 255, 0.6);
   border-right-width: 3px;
   border-right-color: rgba(255, 255, 255, 0.6);
@@ -234,30 +246,24 @@ body {
   border-bottom-width: 3px;
   color: #1f3f36;
 }
-
 .btn-nav:hover {
   background-color: white;
   color: #1f3f36;
 }
 
-@media (max-width: 768px) {
-  svg#logo {
+svg#logo {
+  @media (max-width: 768px){
+    width: 125px;
+  }
+  @media (min-width: 769px){
     width: 125px;
   }
 }
-@media (min-width: 769px) {
-  svg#logo {
-    width: 125px;
-  }
-}
-
-@media (max-width: 768px) {
-  svg#logo-text {
+svg#logo-text {
+  @media (max-width: 768px){
     width: 250px;
   }
-}
-@media (min-width: 769px) {
-  svg#logo-text {
+  @media (min-width: 769px){
     width: 325px;
   }
 }
@@ -280,11 +286,11 @@ body {
   font-size: 1.4rem;
   font-weight: 400;
   color: black;
-  border-color: rgb(224, 178, 105);
+  border-color:rgb(224, 178, 105);
   border-style: solid;
   border-width: 4px;
   border-radius: 0px;
-  box-shadow: rgba(10, 10, 10, 0.05) 0 1px 4px 0 inset;
+  box-shadow: rgba(10, 10, 10, .05) 0 1px 4px 0 inset;
 }
 
 .form-textarea {
@@ -294,11 +300,11 @@ body {
   letter-spacing: 0.02rem;
   display: block;
   min-height: px;
-  border-color: rgb(224, 178, 105);
+  border-color:rgb(224, 178, 105);
   border-style: solid;
   border-width: 4px;
   border-radius: 0px;
-  box-shadow: rgba(10, 10, 10, 0.05) 0 1px 4px 0 inset;
+  box-shadow: rgba(10, 10, 10, .05) 0 1px 4px 0 inset;
 }
 
 #footer svg.logo {
@@ -326,9 +332,9 @@ section#jumbo {
 
 #offcanvasTop a {
   color: white;
-  font-family: "Hind";
+  font-family: $headerFont;
   text-transform: uppercase;
-  text-decoration: none;
+  text-decoration: none;;
 }
 
 @keyframes pulse {
@@ -342,6 +348,7 @@ section#jumbo {
     transform: scale(1);
   }
 }
+
 .bg-paper {
   background-image: url("/assets/img/texture-nouveau.jpg");
   background-position: top;
@@ -357,7 +364,7 @@ section#jumbo {
   margin: auto;
   position: absolute;
   width: 100%;
-  height: 60%;
+  height:60%;
   color: white;
 }
 
@@ -382,7 +389,7 @@ section#jumbo {
 .masthead .slug {
   margin-top: 3rem;
   letter-spacing: 0.1em;
-  text-shadow: 0px 3px 0px rgb(0, 0, 0);
+  text-shadow: 0px 3px 0px rgba(0, 0, 0, 1);
 }
 
 img.hr {
@@ -390,7 +397,6 @@ img.hr {
   margin-right: auto;
   display: block;
 }
-
 section.welcome {
   padding-bottom: 4rem;
 }
@@ -403,9 +409,7 @@ section.welcome {
   background-origin: content-box;
   height: 900px;
   background-color: rgb(33, 21, 29);
-}
-@media (min-width: 769px) {
-  .cannabis-coffee-image {
+  @media (min-width: 769px){
     max-width: 50vw;
     margin-top: -2rem;
   }
@@ -419,9 +423,7 @@ section.welcome {
   background-position-y: top;
   background-origin: content-box;
   background-color: rgb(27, 22, 25);
-}
-@media (min-width: 769px) {
-  .cannabis-coffee-text {
+  @media (min-width: 769px){
     max-width: 50vw;
     margin-bottom: 2rem;
   }
@@ -448,12 +450,13 @@ section.welcome {
   background-color: #2a5146;
 }
 
+
 section#testimonials p {
   font-weight: 600;
 }
 
 section#footer {
-  background-color: rgb(27, 22, 25);
+  background-color: $color-offblack;
   min-height: 10rem;
   background-image: url("/assets/img/botanicals.png");
   background-repeat: no-repeat;
@@ -470,19 +473,17 @@ div.announcement h6, section#footer h6 {
   font-weight: 500;
 }
 
-@media (min-width: 769px) {
-  #sub-nav div {
+#sub-nav div {
+  @media (min-width: 769px){
     width: 320px;
   }
-}
-@media (max-width: 768px) {
-  #sub-nav div {
+  @media (max-width: 768px) {
     width: 100%;
   }
 }
 
-div.announcement.show-on-monday, div.announcement.show-on-monday, div.announcement.show-on-tuesday, div.announcement.show-on-tuesday, div.announcement.show-on-wednesday, div.announcement.show-on-wednesday, div.announcement.show-on-thursday, div.announcement.show-on-thursday {
-  display: none;
+div.announcement.show-on-monday,div.announcement.show-on-monday, div.announcement.show-on-tuesday,div.announcement.show-on-tuesday, div.announcement.show-on-wednesday,div.announcement.show-on-wednesday, div.announcement.show-on-thursday,div.announcement.show-on-thursday {
+  display:none;
 }
 
 body.is-monday div.announcement.show-on-monday, body.is-tuesday div.announcement.show-on-tuesday, body.is-wednesday div.announcement.show-on-wednesday, body.is-thursday div.announcement.show-on-thursday {
@@ -490,18 +491,18 @@ body.is-monday div.announcement.show-on-monday, body.is-tuesday div.announcement
 }
 
 .bg-offblack {
-  background-color: rgb(27, 22, 25);
+  background-color: $color-offblack;
 }
 
 .bg-announcement {
-  background-color: #e0b269;
+  background-color: $color-gold-nav;
 }
 
 .bg-gold {
-  background-color: #e0b269;
+  background-color: $color-gold-nav;
 }
 
-.btn-dark, .btn-light {
+.btn-dark,.btn-light {
   font-family: "Hind";
 }
 
@@ -515,7 +516,7 @@ section#footer a {
 
 .social-icon {
   max-width: 40px;
-  fill: #e0b269;
+  fill:#e0b269;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -541,6 +542,7 @@ section#footer a {
     animation-timeline: view();
   }
 }
+
 .hours-cell {
   width: 100px;
 }
@@ -550,5 +552,3 @@ section#footer a {
   animation-range: entry-crossing;
   animation-timeline: view();
 }
-
-/*# sourceMappingURL=main.css.map */

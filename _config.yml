@@ -1,0 +1,12 @@
+url: "https://www.highergrounds.me" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Higher Grounds Cannabis & Coffee" # the name of your site, e.g. ACME Corp.
+description: Higher Grounds offers Maine&#039;s finest CBD paired with artisanal coffee in the Greater Portland region.
+email: david@raygun.org
+
+plugins:
+ - jekyll-seo-tag
+ - jekyll-sitemap
+
+permalink: /:categories/:title/
+

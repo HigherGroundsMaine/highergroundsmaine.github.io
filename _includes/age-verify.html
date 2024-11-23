@@ -1,0 +1,22 @@
+<script type="text/javascript">
+    addEventListener('DOMContentLoaded', () => {
+    const modal = new bootstrap.Modal('#ageVerification', {});
+
+    if (
+        !document.cookie
+        .split('; ')
+        .find((cookie) => cookie.startsWith('age_verified='))
+    ) {
+        modal.show();
+    }
+
+    const el = document.getElementById('age-verification-button');
+    if (el) {
+        el.addEventListener('click', () => {
+        document.cookie =
+            'age_verified=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; secure';
+        modal.hide();
+        });
+    }
+    });
+</script>

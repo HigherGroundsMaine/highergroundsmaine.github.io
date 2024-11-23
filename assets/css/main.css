@@ -55,11 +55,7 @@ a {
 }
 
 html, body {
-  overflow-x: clip;
-}
-
-body.modal-open {
-  overflow: clip;
+  overscroll-behavior-x: none;
 }
 
 h1, h2 {

@@ -470,6 +470,17 @@ div.announcement h6, section#footer h6 {
   font-weight: 500;
 }
 
+@media (min-width: 769px) {
+  #sub-nav div {
+    width: 320px;
+  }
+}
+@media (max-width: 768px) {
+  #sub-nav div {
+    width: 100%;
+  }
+}
+
 div.announcement.show-on-monday, div.announcement.show-on-monday, div.announcement.show-on-tuesday, div.announcement.show-on-tuesday, div.announcement.show-on-wednesday, div.announcement.show-on-wednesday, div.announcement.show-on-thursday, div.announcement.show-on-thursday {
   display: none;
 }

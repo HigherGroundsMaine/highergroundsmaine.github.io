@@ -77,17 +77,14 @@ h1, h2 {
 }
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 6rem;
-    font-family: "Hind";
-    line-height: 7rem;
+  h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 }
 @media (min-width: 769px) {
-  h1 {
-    font-size: 7.993rem;
-    font-family: "Hind";
-    line-height: 7rem;
+  h3 {
+    font-size: 3.998rem;
   }
 }
 
@@ -99,7 +96,6 @@ h2 {
 
 h3 {
   font-family: "Hind";
-  font-size: 3.998rem;
 }
 
 h4 {

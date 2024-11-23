@@ -173,6 +173,7 @@ section#footer h6 {
   background-position-y: bottom;
   background-origin: content-box;
   z-index: 100;
+  padding: 0px;
 }
 
 .navbar a {
@@ -479,6 +480,11 @@ div.announcement h6, section#footer h6 {
   font-weight: 500;
 }
 
+div.announcement a {
+  color: rgb(27, 22, 25);
+  text-decoration: none;
+}
+
 @media (min-width: 769px) {
   #sub-nav div {
     width: 320px;
@@ -490,11 +496,11 @@ div.announcement h6, section#footer h6 {
   }
 }
 
-div.announcement.show-on-monday, div.announcement.show-on-monday, div.announcement.show-on-tuesday, div.announcement.show-on-tuesday, div.announcement.show-on-wednesday, div.announcement.show-on-wednesday, div.announcement.show-on-thursday, div.announcement.show-on-thursday {
+div.announcement.show-on-monday, div.announcement.show-on-monday, div.announcement.show-on-tuesday, div.announcement.show-on-tuesday, div.announcement.show-on-wednesday, div.announcement.show-on-wednesday, div.announcement.show-on-thursday, div.announcement.show-on-thursday, div.announcement.show-on-friday, div.announcement.show-on-saturday, div.announcement.show-on-sunday {
   display: none;
 }
 
-body.is-monday div.announcement.show-on-monday, body.is-tuesday div.announcement.show-on-tuesday, body.is-wednesday div.announcement.show-on-wednesday, body.is-thursday div.announcement.show-on-thursday {
+body.is-monday div.announcement.show-on-monday, body.is-tuesday div.announcement.show-on-tuesday, body.is-wednesday div.announcement.show-on-wednesday, body.is-thursday div.announcement.show-on-thursday, body.is-friday div.announcement.show-on-friday, body.is-saturday div.announcement.show-on-saturday, body.is-sunday div.announcement.show-on-sunday {
   display: block;
 }
 

@@ -76,10 +76,19 @@ h1, h2 {
   }
 }
 
-h1 {
-  font-family: "Hind";
-  font-size: 7.993rem;
-  line-height: 7rem;
+@media (max-width: 768px) {
+  h1 {
+    font-size: 7.993rem;
+    font-family: "Hind";
+    line-height: 7rem;
+  }
+}
+@media (min-width: 769px) {
+  h1 {
+    font-size: 7rem;
+    font-family: "Hind";
+    line-height: 7rem;
+  }
 }
 
 h2 {

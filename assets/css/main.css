@@ -551,6 +551,10 @@ section#footer a {
     }
   }
   .scrolling {
+    -webkit-animation: fadeIn 3s ease-in-out;
+    -moz-animation: fadeIn 3s ease-in-out;
+    -ms-animation: fadeIn 3s ease-in-out;
+    -o-animation: fadeIn 3s ease-in-out;
     animation: fadeIn 3s ease-in-out;
     animation-range: entry-crossing;
     animation-timeline: view();
